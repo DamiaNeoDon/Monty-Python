@@ -1,0 +1,6 @@
+print("welcome to my generatorrrr")
+
+city_name =(input("where were you born?\n"))
+
+pet_name =(input("what is your pet name?\n"))
+print ("your band can be called: " + city_name +" "+ pet_name + ". Aint that cool?")
