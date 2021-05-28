@@ -1,0 +1,90 @@
+#Data Types
+print("hello"[3])
+print ('hahaha'+ 'hihihih')
+
+print(123+132)
+
+print(123_123_123+321_321_321)
+print(234+432)
+print(456+654)
+num_char = 6
+new_num_char = str(num_char)
+print(type(num_char))
+print(type(new_num_char))
+
+
+
+print(type(two_digit_number))
+# print(str(two_digit_number))
+
+first_nu = int(two_digit_number[0])
+second_nu= int(two_digit_number[1])
+# print(int(first_nu))
+# print(int(second_nu))
+print(first_nu + second_nu)
+fis=(str(first_nu+second_nu))
+print(type(fis))
+print("suma cyfr to: " +fis)
+
+
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+
+f_height = (float(height))
+# print(height_in_m = height)
+f_weight= (int(weight))
+kwa_wz= f_height*f_height
+
+BMI= f_weight/kwa_wz
+print(BMI)
+
+
+
+ 
+maksAge = 100
+
+# print (age_as_int)
+
+month= int(age_as_int/12)
+week = int(age_as_int/52)
+
+yAMinusMaksAge = (maksAge - age_as_int)
+
+# print(yAMinusMaksAge)
+ageInMon =(yAMinusMaksAge*12)
+ageInDays=(yAMinusMaksAge*365)
+
+print(f"you have {yAMinusMaksAge} years left or  {ageInMon} months or {ageInDays} days left. use it wisely")
+
+
+
+print("Welcome to mystery tip calculator.")
+total_bill =(input("what was the total bill? \n"))
+# print(float(total_bill))
+
+float_total_bill=(float(total_bill))      
+# age = input("What is your current age?")
+# age_as_int =int(age)
+tip_value = (input("giving 10,12,or 15%tip?"))
+tip_value_as_int =(int(tip_value))
+tip_value_and_bille =tip_value_as_int /100 *float_total_bill + float_total_bill
+# print(tip_value_and_bille)
+# print(tip_value_and_bille10)
+#można by zrobić array [10,12,15] i zamienić string to int i listen to entry
+numb_of_parttakers =int(input("how many of you is there to split between? \n"))
+numb_of_parttakers_int = (int(numb_of_parttakers))
+
+# print(numb_of_parttakers(type))
+float_total_bill =(float(total_bill))
+tip_10 =(float_total_bill * 1.10)
+tip_12 =(float_total_bill * 1.12)
+tip_15 =(float_total_bill * 1.15)
+
+split_output = (tip_value_and_bille) /(int(numb_of_parttakers))
+round(split_output)
+split_output ="{:.2f}".format(split_output) 
+print(f"each person should pay: ${split_output}")
+
+
+
