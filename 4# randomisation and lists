@@ -1,0 +1,146 @@
+import random
+import my_module
+
+
+
+random_intefer =random.randint(1, 99)
+print(random_intefer)
+
+print(my_module.pi)
+
+random_float=random.random() *5
+print(random_float*6)
+
+if random_float <3:
+  print("orł")
+else:
+  print("reszek")
+
+  dataStructure = ["fikus", "deha", "herbata"]
+  dataStructure[1]= "debra"
+  print(dataStructure[1])
+  dataStructure.extend(["yerba"])
+  print(dataStructure )
+
+  
+
+
+
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+import random
+# random.randint(0,)
+# # print(randomint(names.length))
+# print(len(names))
+# num_items=len(names)
+# random_choice = random.randint(0, num_items-1)
+
+# payer=names[random_choice]
+
+####alternative 
+payer=random.choice(names)### waaaay shorter a way
+print (payer+ " will pay today.")
+
+
+
+
+
+
+
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+horizonal= int(position[0])
+vertical=int(position[1])
+# print(position[1])
+
+selectedRow=map[vertical -1]
+selectedRow[horizonal-1] = "X"
+##or map[vertical-1][horizonal-1]= "X"
+
+
+
+===== rock paper scissors
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+# random=random.randint(0,2)
+
+##selection [0,1,2]
+##assigned to R,P,S
+##input ("select 0r,1p,2s")
+## val_selected = input ...
+
+## random_npc =random.randint(0,2)
+## 
+
+
+##if choice =r and random=r print draw
+##if choice =r and randaom=p print lost
+##if choice=r and random=s print won!
+
+##if choice =p and random=r print won!
+##if choice =p and random=p print draw
+##if choice=p and random=s print lost
+
+##if choice =s and random=r print lost
+##if choice =s and randaom=p print won!
+##if choice=s and random=s print draw
+
+
+
+
+user_choice=int(input("what 0r 1p 2s\n"))
+
+
+images= [rock, paper, scissors]
+if user_choice>=3 or user_choice <0:
+  print("niprawidłowy nr I like the effort though")
+else:
+  print(images[user_choice])
+
+computer_choice =random.randint(0, 2)
+print(images[computer_choice])
+print(f"NPC chose {computer_choice}")
+
+
+if user_choice==0 and computer_choice ==2:
+  print("you win!")
+elif computer_choice==0 and user_choice==2:
+  print("you lose")
+elif computer_choice > user_choice:
+  print("your lose")
+elif user_choice >computer_choice:
+  print("you win")
+elif computer_choice==user_choice:
+  print("remis=wojna")
