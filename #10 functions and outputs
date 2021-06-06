@@ -1,0 +1,35 @@
+## title upper case 1st letter
+
+
+import re
+def format_name(f_name,l_name):
+  formated_f_name=f_name.title()
+  formated_l_name=l_name.title()
+
+  return(f"{formated_f_name} {formated_l_name}")
+formated_string=format_name("damian", "frac")
+print(formated_string)
+
+
+
+import re
+def format_name(f_name,l_name):
+  formated_f_name=f_name.title()
+  formated_l_name=l_name.title()
+
+  return(f"{formated_f_name} {formated_l_name}")
+formated_string=format_name("damian", "frac")
+print(formated_string)
+
+#####
+import re
+def format_name(f_name,l_name):
+  if f_name=="" or l_name=="":
+      return "you did not put valid inputs."
+  formated_f_name=f_name.title()
+  formated_l_name=l_name.title()
+
+  return(f"{formated_f_name} {formated_l_name}")
+print(format_name(input("what is your name?"),
+input("what is your last name?")))
+
