@@ -1,0 +1,42 @@
+
+#calc
+
+#add
+def add(n1,n2):
+    return n1+n2
+#substract
+def substract(n1,n2):
+    return n1-n2
+#multiply
+def multiply(n1,n2):
+    return n1*n2
+
+#divide
+def divide(n1,n2):
+    return n1/n2
+
+operations={
+    "+":add,
+    "-":substract,
+    "*":multiply,
+    "/":divide
+}
+
+num1=int(input("podaj pierwszą liczbę:"))
+
+
+for symbol in operations:
+    print(symbol)
+operation_symbol=input("wybierz funkcje kalkulacji: ")
+num2=int(input("podaj drugą liczbę:")) 
+do_magic =operations[operation_symbol]
+first_answer= do_magic(num1,num2)
+ 
+print(f"{num1}{operation_symbol}{num2}={first_answer}")
+
+operation_symbol=input("wybierz inną funkcję: ")
+num3=int(input("podaj kolejną liczbę: "))
+do_magic =operations[operation_symbol]
+second_answer=do_magic (do_magic(num1,num2),num3)
+
+print(f"{first_answer}{operation_symbol}{num3}={second_answer}")
