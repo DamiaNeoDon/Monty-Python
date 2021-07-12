@@ -1,0 +1,29 @@
+# # from turtle import Turtle, Screen
+# #
+# # tim = Turtle()
+# #
+# # tim.shape("classic")
+# # tim.color("pink")
+# # tim.forward(100)
+# # tim.right(90)
+# # tim.forward(100)
+# # tim.right(90)
+# # tim.forward(100)
+# # tim.right(90)
+# # tim.forward(100)
+# #
+# #
+# # for _ in range (4):
+# #     tim.forward(100)
+# #     tim.left(90)
+# #
+# #
+#
+# import  turtle as t
+# tim =t.Turtle()
+#
+# import heroes
+# print(heroes.gen())
+# #
+# # screen= Screen()
+# # screen.exitonclick()
