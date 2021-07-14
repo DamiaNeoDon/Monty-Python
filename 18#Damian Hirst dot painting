@@ -1,0 +1,41 @@
+# import colorgram
+#
+# rgb_colors=[]
+# colors = colorgram.extract('4850.jpeg', 30)
+#
+# for color in colors:
+#     r = color.rgb.r
+#     g = color.rgb.g
+#     b = color.rgb.b
+#     new_color= (r, g, b)
+#     rgb_colors.append(color.rgb)
+#
+# print(rgb_colors)
+
+import turtle as turtle_module
+import random
+turtle_module.colormode(255)
+
+tim = turtle_module.Turtle()
+tim.speed("fastest")
+tim.penup()
+tim.hideturtle()
+color_list= [(41, 123, 156), (150, 20, 58), (3, 177, 143), (127, 144,199), (23, 122, 98), (231, 229, 225), (209, 121, 173), (215, 202, 132), (146, 162, 39), (225, 81, 104), (119, 172, 116)]
+
+tim.setheading(225)
+tim.forward(450)
+tim.setheading(0 )
+number_of_dots=101
+
+for dot_count in range (1,number_of_dots):
+    tim.dot(20, random.choice(color_list))
+    tim.forward(50)
+    if dot_count%10==0:
+        tim.setheading(90)
+        tim.forward(50)
+        tim.setheading(180)
+        tim.forward(500)
+        tim.setheading(0)
+
+screen =turtle_module.Screen()
+screen.exitonclick()
